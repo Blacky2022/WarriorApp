@@ -18,17 +18,13 @@ app.use(
 )
 app.use(eStatic('public'))
 app.engine(
-	'.hbs ',
+	'.hbs',
 	engine({
 		extname: '.hbs',
 		// helpers:
 	})
 )
 app.set('view engine', '.hbs')
-
-app.get('/', (req, res) => {
-	res.send('Helloass!')
-})
 
 app.use('/', homeRouter)
 app.use('/register', registerRouter)
