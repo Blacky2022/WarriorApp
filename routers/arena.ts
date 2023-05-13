@@ -4,8 +4,8 @@ export const arenaRouter = Router()
 
 arenaRouter
 	.get('/matchmaking', (req, res) => {
-		res.send('Here u gonan be able to choose 2 worriors and force them to fight each other')
+		res.render('arena/matchmaking')
 	})
 	.post('/fight', (req, res) => {
-		res.send('Fight log')
+		res.render('arena/fight')
 	})
