@@ -24,6 +24,6 @@ registerRouter
 		})
 		await warrior.insert()
 		res.render('register/warrior-added', {
-            warrior
-        })
+			warrior,
+		})
 	})
