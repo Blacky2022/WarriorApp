@@ -79,7 +79,7 @@ export class WarriorRecord {
 		})
 	}
 	static async listTop(topCount: number): Promise<WarriorRecord[] | null> {
-		const [results] = (await pool.execute('SELECT * FROM `warrior` ORDER BY `wins` DESC LIMIT `topCount` = :topCount', {
+		const [results] = (await pool.execute('SELECT * FROM `warrior` ORDER BY `wins` DESC LIMIT :topCount', {
 			topCount,
 		})) as [WarriorRecord[], FieldPacket[]]
 		return results.map(obj => new WarriorRecord(obj))
