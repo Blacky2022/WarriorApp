@@ -1,0 +1,318 @@
+/* Set default font family and size */
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+}
+
+/* Set background color and add a bit of padding */
+body {
+	background-color: #f7f7f7;
+	padding: 20px;
+}
+
+/* Set width and center the main content area */
+.main-content {
+	max-width: 800px;
+	margin: 0 auto;
+	background-color: #fff;
+	border-radius: 4px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+}
+nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #f2f2f2;
+	padding: 1rem;
+}
+
+.nav-links {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+}
+
+.nav-links li {
+	margin-right: 1rem;
+}
+
+.nav-links li:last-child {
+	margin-right: 0;
+}
+
+.nav-links a {
+	display: inline-block;
+	padding: 0.5rem 1rem;
+	border: 2px solid #007bff;
+	background-color: #007bff;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	border-radius: 0.25rem;
+	transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+	background-color: #0056b3;
+	border-color: #0056b3;
+	color: #fff;
+}
+
+.nav-links a:active {
+	background-color: #0056b3;
+	border-color: #0056b3;
+	color: #fff;
+	transform: translateY(1px);
+}
+
+/* Style the heading elements */
+h1 {
+	font-size: 36px;
+	font-weight: bold;
+	margin: 0;
+	padding: 40px 20px 20px;
+	text-align: center;
+	color: #333;
+}
+
+/* Style links as pretty buttons */
+a {
+	display: inline-block;
+	padding: 0.5rem 1rem;
+	border: 2px solid #007bff;
+	background-color: #007bff;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	border-radius: 0.25rem;
+	transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+a:hover,
+a:focus {
+	background-color: #0056b3;
+	border-color: #0056b3;
+}
+h2 {
+	font-size: 24px;
+	font-weight: bold;
+	margin-top: 0;
+	color: #333;
+}
+
+/* Style the primary button */
+.button-primary {
+	background-color: #007bff;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 4px;
+	text-decoration: none;
+	display: inline-block;
+	margin-top: 20px;
+	transition: background-color 0.2s;
+}
+
+.button-primary:hover {
+	background-color: #0062cc;
+}
+
+/* Style the form elements */
+form label {
+	display: block;
+	margin-bottom: 10px;
+	font-weight: bold;
+	color: #333;
+}
+
+form input[type='text'],
+form input[type='email'],
+form input[type='password'],
+form textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	margin-bottom: 20px;
+	font-size: 16px;
+	color: #333;
+}
+
+form textarea {
+	height: 150px;
+}
+
+/* Style the alert messages */
+.alert {
+	padding: 10px;
+	margin-bottom: 20px;
+	border-radius: 4px;
+}
+
+.alert-success {
+	background-color: #d4edda;
+	color: #155724;
+	border: 1px solid #c3e6cb;
+}
+
+.alert-danger {
+	background-color: #f8d7da;
+	color: #721c24;
+	border: 1px solid #f5c6cb;
+}
+
+/* Style the table */
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 20px;
+}
+
+table th,
+table td {
+	padding: 10px;
+	text-align: left;
+	vertical-align: top;
+}
+
+table th {
+	font-weight: bold;
+	color: #333;
+	border-bottom: 2px solid #ddd;
+}
+
+table td {
+	border-bottom: 1px solid #ddd;
+}
+
+/* Style the table header row */
+.table-header {
+	background-color: #f5f5f5;
+	font-size: 16px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+/* Style the leaderboard rows */
+.leaderboard-row {
+	background-color: #fff;
+	transition: background-color 0.2s;
+}
+
+.leaderboard-row:hover {
+	background-color: #f5f5f5;
+}
+
+/* Style the rank number */
+/* Style for the table */
+table {
+	border-collapse: collapse;
+	width: 100%;
+	max-width: 800px;
+	margin: 0 auto;
+	text-align: center;
+	font-family: Arial, sans-serif;
+	color: #444;
+}
+
+/* Style for the table header */
+th {
+	background-color: #f2f2f2;
+	color: #444;
+	font-weight: bold;
+	padding: 10px;
+	border: 1px solid #ddd;
+}
+
+/* Style for the table rows */
+tr:nth-child(even) {
+	background-color: #f9f9f9;
+}
+
+tr:hover {
+	background-color: #f5f5f5;
+}
+
+/* Style for the table data */
+td {
+	padding: 10px;
+	border: 1px solid #ddd;
+}
+
+/* Style for the first column (rank) */
+td:first-child {
+	font-weight: bold;
+}
+
+/* Style for the last column (score) */
+td:last-child {
+	font-weight: bold;
+}
+
+/* Style for the table caption */
+caption {
+	font-size: 1.2em;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+/* Style for the table footer */
+tfoot {
+	font-weight: bold;
+	background-color: #f2f2f2;
+}
+
+tfoot td {
+	border-top: 2px solid #444;
+}
+/* Style the select element */
+select {
+	width: 200px;
+	height: 40px;
+	font-size: 16px;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+	padding: 8px;
+	background-color: #fff;
+}
+
+/* Style the option elements */
+select option {
+	font-size: 16px;
+	padding: 8px;
+}
+
+/* Style the select element when it is open */
+select:focus {
+	outline: none;
+	border-color: #aaa;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.start-fight-button {
+	display: inline-block;
+	background-color: #ff5733;
+	color: #fff;
+	font-size: 16px;
+	padding: 12px 24px;
+	border-radius: 4px;
+	text-decoration: none;
+	border: none;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.start-fight-button:hover {
+	background-color: #e64c00;
+}
+.center {
+	display: flex;
+	justify-content: center;
+  }
+  
